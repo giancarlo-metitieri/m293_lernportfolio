@@ -1,0 +1,30 @@
+#Aufgabe T2
+##Geschichte HTTP
+-HTML wird im 1989 mit konzept von URLs entwickelt
+-Erstes HTTP wird publiziert.
+-Durch Updates werden immer mehr Bugs rausgenommen und Performance wird Optimisiert
+
+##Aufbau einer URL
+(1)https://   (2)beispiel.xyz  (3):80  (4)/pfad/  (5)index.html  (6)?key1=value  (7)#anker\
+
+1. Schema zeigt Protokoll
+2. Domäne zeigt Addresse zum Server
+3. Port
+4. Pfad zur gewünschter HTML Datei, PDF oder Download
+5. Datei
+6. Argumente (Irrelevant für Benutzer)
+7. Anker auf bestimmter Div, usw...
+
+##TCP
+Eine TCP Nachricht hat immer ein Header und einen Body.
+Der Header sagt, was mit der Datei gemacht werden soll und
+der Body ist dann der Payload.
+
+##HTTP Verbindung
+Ein Client HTTP Packet hat immer ein POST /datei.html HTTP/port. Post bedeutet, dass man Daten
+am Server liefert.
+Dieser wird dann vom Server akzeptiert und gibt die [HTTP/port statuscode OK] Nachricht zurück.
+###Response Status Codes
+-200 OK: Erfolgreich
+-404 Not Found: Resource Nicht gefunden
+-500 Internal Server Error: Interner Fehler bei dynamischen Seiten
